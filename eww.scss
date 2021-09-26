@@ -1,0 +1,212 @@
+/*************************************************/
+/*************        COLORS         *************/
+/*************************************************/
+$white:       #1B2020;
+$gray:        #2A3331;
+$pink:        #C98093;
+$green:       #7CA198;
+$yellow:      #DDB278;
+$blue:        #6080B0;
+$purple:      #8E6F98;
+$cyan:        #6ca8cf;
+
+
+/*************************************************/
+/*************        ROOT CLASS     *************/
+/*************************************************/
+*{
+  all: unset;
+  background-color: #1B2020;
+  font-family: 'FantasqueSansMono Nerd Font Mono';
+}
+/*************************************************/
+/*************      COLOR CLASSES    *************/
+/*************************************************/
+.pink{
+  color: $pink;
+}
+
+.green{
+  color: $green;
+}
+
+.yellow{
+  color: $yellow;
+}
+
+.blue{
+  color: $blue;
+}
+
+.purple{
+  color: $purple;
+}
+
+.cyan{
+  color: $cyan;
+}
+
+/*************************************************/
+/*************      BAR WIDGET       *************/
+/*************************************************/
+
+.bar{
+  font-size: 40px;
+  margin-bottom: -2px;
+}
+
+/*************************************************/
+/*************      USER WIDGET      *************/
+/*************************************************/
+
+.user{
+  font-size: 16px;
+}
+
+/*************************************************/
+/*************      POWER WIDGET      ************/
+/*************************************************/
+
+.power{
+  font-size: 35px;
+  padding: 15px;
+}
+
+/*************************************************/
+/*************   DATE/TIME WIDGET   **************/
+/*************************************************/
+
+.date{
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.day{
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.separator{
+  font-size: 35px;
+}
+
+/*************************************************/
+/********      SCREENSHOT WIDGET      ************/
+/*************************************************/
+
+.screenshot{
+  font-size: 35px;
+  padding: 5px;
+}
+
+/*************************************************/
+/*************      SYSTEM WIDGET     ************/
+/*************************************************/
+
+.metric-ram scale trough highlight , .metric-vol scale trough highlight , .metric-root scale trough highlight , .metric-disk scale trough highlight, .metric-bright scale trough highlight {
+  all: unset;
+  border-radius: 5px;
+}
+
+.metric-ram scale trough , .metric-vol scale trough , .metric-root scale trough , .metric-disk scale trough, .metric-bright scale trough {
+  all: unset;
+  background-color: $gray;
+  border-radius: 50px;
+  min-height: 20px;
+  min-width: 150px;
+  margin-left: 20px;
+}
+
+.metric-ram scale trough highlight {
+  background-color: $cyan;
+}
+
+.metric-vol scale trough highlight {
+  background-color: $purple;
+}
+
+.metric-bright scale trough highlight {
+  background-color: $yellow;
+}
+
+.metric-root scale trough highlight {
+  background-color: $green;
+}
+
+.metric-disk scale trough highlight {
+  background-color: $pink;
+}
+
+.metric-lable {
+  font-family: "FantasqueSansMono Nerd Font";
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+
+/*************************************************/
+/*************      FETCH WIDGET     *************/
+/*************************************************/
+
+.fetch{
+  font-size: 15px;
+}
+
+
+.dots{
+  font-size: 15px;
+}
+
+/*************************************************/
+/*************      PLAYER WIDGET    *************/
+/*************************************************/
+
+.song{
+  font-size: 15px;
+}
+
+.artist{
+  font-size: 15px;
+}
+
+.control{
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.metric-player-center  scale trough highlight, .metric-player-side,  scale trough highlight {
+  all: unset;
+  border-radius: 10px;
+  background-color: $pink;
+
+}
+
+.metric-player-center scale trough, .metric-player-side scale trough  {
+  all: unset;
+  background-color: $gray;
+  border-radius: 20px;
+  min-height: 10px;
+
+}
+
+.metric-player-center scale trough  {
+  min-width: 20px;
+
+}
+
+.metric-player-side scale trough  {
+  min-width: 200px;
+
+}
+
+/*************************************************/
+/*************    LOCATIONS WIDGET   *************/
+/*************************************************/
+
+.locations-center{
+  font-size: 35px;
+}
+
+.locations-side{
+  font-size: 35px;
+}
