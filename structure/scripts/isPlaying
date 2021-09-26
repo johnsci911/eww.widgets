@@ -1,7 +1,6 @@
-#/usr/bin/env sh
-
-if mpc status | grep -q '\[playing\]'; then
-echo ""
+#!/bin/bash
+if [mpc status | grep -q '\[playing\]']; then
+    echo ""
 else
-echo "契" 
+    echo "契"
 fi

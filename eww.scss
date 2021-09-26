@@ -105,14 +105,14 @@ $cyan:        #6ca8cf;
 
 .metric-ram scale trough highlight , .metric-vol scale trough highlight , .metric-root scale trough highlight , .metric-disk scale trough highlight, .metric-bright scale trough highlight {
   all: unset;
-  border-radius: 5px;
+  border-radius: 20px;
 }
 
 .metric-ram scale trough , .metric-vol scale trough , .metric-root scale trough , .metric-disk scale trough, .metric-bright scale trough {
   all: unset;
   background-color: $gray;
   border-radius: 50px;
-  min-height: 20px;
+  min-height: 10px;
   min-width: 150px;
   margin-left: 20px;
 }

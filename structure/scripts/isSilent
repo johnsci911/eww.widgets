@@ -1,9 +1,8 @@
-#/usr/bin/env sh
-
+#!/bin/bash
 silent="$(dunstctl is-paused)"
 if [[ $silent == "true" ]]; then
-echo "~/.config/eww/structure/icons/bell-off.png"
+echo "structure/icons/bell-off.png"
 
 else
-echo "~/.config/eww/structure/icons/bell-on.png"
+echo "structure/icons/bell-on.png"
 fi
