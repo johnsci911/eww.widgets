@@ -2,4 +2,5 @@
 
 ### WIP widgets
 
-![Screenshot_20210926_113758](https://user-images.githubusercontent.com/6580895/134816151-37c704e4-b11e-43f2-80dd-2b806f9c5926.png)
+![image](https://user-images.githubusercontent.com/6580895/134816479-19a5bfa2-f179-47c0-b453-b35c862cc471.png)
+
