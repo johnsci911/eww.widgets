@@ -77,7 +77,7 @@ $cyan:        #6ca8cf;
 /*************************************************/
 
 .date{
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 600;
 }
 
@@ -149,12 +149,12 @@ $cyan:        #6ca8cf;
 /*************************************************/
 
 .fetch{
-  font-size: 15px;
+  font-size: 18px;
 }
 
 
 .dots{
-  font-size: 15px;
+  font-size: 10px;
 }
 
 /*************************************************/
@@ -170,7 +170,7 @@ $cyan:        #6ca8cf;
 }
 
 .control{
-  font-size: 25px;
+  font-size: 30px;
   font-weight: bold;
 }
 
@@ -194,19 +194,10 @@ $cyan:        #6ca8cf;
 
 }
 
-.metric-player-side scale trough  {
-  min-width: 200px;
-
-}
-
 /*************************************************/
 /*************    LOCATIONS WIDGET   *************/
 /*************************************************/
 
 .locations-center{
-  font-size: 35px;
-}
-
-.locations-side{
-  font-size: 35px;
+  font-size: 50px;
 }
