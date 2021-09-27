@@ -2,7 +2,7 @@
 
 ### WIP widgets
 
-![image](https://user-images.githubusercontent.com/6580895/134816479-19a5bfa2-f179-47c0-b453-b35c862cc471.png)
+![image](https://user-images.githubusercontent.com/6580895/134838794-436c99b2-d5e0-4b6d-a7a6-4618b21f4834.png)
 
 
 #### TODO
