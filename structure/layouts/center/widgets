@@ -333,7 +333,7 @@
                                 :spacing "5"
 
                                 (label  :class "artist purple"
-                                        :text {artist != "" ? "${artist}" : "Artist"})
+                                        :text {artist != "" ? "${artist}" : "No Artist"})
 
                                 (label  :class "song blue"
                                         :text {song != "" ? "${song}" : "Not playing"})
