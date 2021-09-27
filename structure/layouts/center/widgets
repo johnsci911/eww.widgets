@@ -317,20 +317,20 @@
                 :space-evenly false
                 :halign "center"
                 :valign "center"
-                :spacing "20"
+                :spacing "10"
                 (image  :path "${imgCover}"
-                        :width "120"
-                        :height "120")
+                        :width "150"
+                        :height "150")
 
                 (box    :orientation "v"
                         :space-evenly false
                         :halign "center"
-                        :spacing "10"
+                        :spacing "5"
 
                         (box    :orientation "v"
                                 :space-evenly false
                                 :halign "center"
-                                :spacing "10"
+                                :spacing "5"
 
                                 (label  :class "artist purple"
                                         :text {artist != "" ? "${artist}" : "Artist"})
