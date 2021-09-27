@@ -1,26 +1,15 @@
 (include "structure/layouts/center/widgets")
 
-(defwindow barLeft
+(defwindow barCenter
         :monitor 0
-        :geometry (geometry     :x "10px"
-                                :y "50px"
-                                :width "250px"
-                                :height "40px"
-                                :anchor "top left")
+        :geometry (geometry     :x "0"
+                                :y "205px"
+                                :width "700px"
+                                :height "80px"
+                                :anchor "center center")
         :windowtype "dock"
         :wm-ignore true
-(barLeftWidget))
-
-(defwindow barRight
-        :monitor 0
-        :geometry (geometry    :x "-10px"
-                               :y "50px"
-                               :width "150px"
-                               :height "40px"
-                               :anchor "top right")
-        :windowtype "dock"
-        :wm-ignore true
-(barRightWidget))
+(barCenterWidget))
 
 (defwindow user
         :monitor 0
@@ -95,7 +84,7 @@
         :monitor 0
         :geometry (geometry     :x "1117px"
                                 :y "477px"
-                                :width "161px"
+                                :width "192px"
                                 :height "219px"
                                 :anchor "top left")
         :windowtype "dock"

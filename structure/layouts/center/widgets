@@ -1,10 +1,10 @@
 (include "structure/variables")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;        LEFT BAR WIDGET       ;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;        CENTER BAR WIDGET       ;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(defwidget barLeftWidget []
+(defwidget barCenterWidget []
         (box    :orientation "h"
                 :space-evenly false
                 :class "bar"
@@ -13,7 +13,13 @@
                 :valign "center"
 
                 (button :class "pink"
+                        :onclick "rofi -show drun&" "")
+
+                (button :class "pink"
                         :onclick "thunar /home/jkcachero&" "")
+
+                (button :class "green"
+                        :onclick "brave-nightly&" "")
 
                 (button :class "green"
                         :onclick "firefox&" "")
@@ -27,23 +33,6 @@
                 (button :class "purple"
                         :onclick "discord&" "ﭮ")
     )
-)
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;       RIGHT BAR WIDGET       ;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-(defwidget barRightWidget []
-        (box    :orientation "h"
-                :space-evenly false
-                :class "bar"
-                :spacing "20"
-                :halign "center"
-                :valign "center"
-
-                (button :class "pink"
-                        :onclick "rofi -show drun&" "")
-        )
 )
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -129,7 +118,7 @@
 
 (defwidget controlWidget []
         (box    :orientation "v"
-                :space-evenly "true"
+                :space-evenly "false"
                 :halign "center"
                 :valign "center"
                 :spacing "10"
@@ -140,31 +129,13 @@
                         :valign "center"
                         :spacing "20"
 
-                        (button :onclick "systemsettings5&"
-                                (image  :path "${settings-icon}"
-                                        :width "30"
-                                        :height "30"
-                                )
-                        )
                         (button :class "green locations-center"
-                                :onclick "flameshot gui &" ""
-
+                                :onclick "flameshot gui &" ""
+                        )
+                        (button :class "yellow locations-center"
+                                :onclick "systemsettings5&" ""
                         )
                 )
-        )
-)
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;        SYSTEM WIDGET         ;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-(defwidget systemWidget []
-        (box    :orientation "v"
-                :class "system"
-                :space-evenly false
-                :spacing 10;
-                :valign "center"
-                :halign "center"
 
                 (box    :orientation "h"
                         :class "metric-ram"
@@ -187,6 +158,20 @@
                                 :active "false"
                                 :value "${ram}")
                 )
+        )
+)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;        SYSTEM WIDGET         ;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(defwidget systemWidget []
+        (box    :orientation "v"
+                :class "system"
+                :space-evenly false
+                :spacing 10;
+                :valign "center"
+                :halign "center"
 
                 (box    :orientation "h"
                         :class "metric-vol"
