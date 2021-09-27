@@ -12,13 +12,13 @@
                 :halign "center"
                 :valign "center"
 
-                (button :class "pink"
+                (button :class "white"
                         :onclick "rofi -show drun&" "")
 
                 (button :class "pink"
                         :onclick "thunar /home/jkcachero&" "")
 
-                (button :class "green"
+                (button :class "cyan"
                         :onclick "brave-nightly&" "")
 
                 (button :class "green"
@@ -343,7 +343,7 @@
                                 :orientation "h"
                                 :space-evenly true
                                 :spacing "20"
-                                (button :onclick "mpc perv" "丹")
+                                (button :onclick "mpc prev" "丹")
                                 (button :onclick "mpc toggle" "${playpause}")
                                 (button :onclick "mpc next" "")
                         )
